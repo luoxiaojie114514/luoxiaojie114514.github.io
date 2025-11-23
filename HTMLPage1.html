@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非凡笔记 - 个人工作区</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <header>
+                <h2>我的笔记工作区</h2>
+                <button class="new-note-btn">+ 新建笔记</button>
+            </header>
+            <nav id="notes-list">
+                <a href="#" class="note-item active">📝 [2025.11.23] Glassmorphism 设计原则</a>
+                <a href="#" class="note-item">📝 [2025.11.22] 学习 Git & GitHub Pages</a>
+                <a href="#" class="note-item">📝 [2025.11.21] 博客 UI 构思记录</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <article class="note-card">
+                <h1>Glassmorphism 设计原则</h1>
+                <p class="meta">最后更新: 2025年11月23日 | 作者: 你的昵称</p>
+                <div class="note-body">
+                    <p>“玻璃拟物”风格的核心在于 **透明度、多层级和色彩柔和**。它通过背景模糊和阴影来模仿玻璃卡片的质感，非常适合作为你个人工作区的 UI。</p>
+                    <ul>
+                        <li>**背景模糊 (Blur)：** 使用 CSS 的 `backdrop-filter: blur(10px)`。</li>
+                        <li>**多层级：** 通过 Z 轴堆叠卡片，制造深度感。</li>
+                        <li>**边框透明：** 使用半透明的边框来模拟玻璃边缘的光泽。</li>
+                    </ul>
+                </div>
+
+                <div class="note-actions">
+                    <button class="action-btn edit-btn">编辑 (手动修改HTML文件)</button>
+                    <button class="action-btn delete-btn">删除 (手动删除HTML文件)</button>
+                </div>
+
+                <section class="discussion-area">
+                    <h2>讨论区 (由第三方服务提供)</h2>
+                    <p>在这里，你需要放置一个外部评论系统的代码，才能实现留言功能。</p>
+                </section>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
